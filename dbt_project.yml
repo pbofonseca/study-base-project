@@ -42,7 +42,7 @@ models:
       relation: true
       columns: true
     staging:
-      +materialized: "{{ 'ephemeral' if target.name == 'PROD' else 'table' }}"
+      +materialized: "{{ 'ephemeral' if target.name == 'production' else 'table' }}"
     intermediate:
       +materialized: table
     marts:

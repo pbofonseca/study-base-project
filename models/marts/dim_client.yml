@@ -9,3 +9,14 @@ models:
         description: Client's identification
         tests:
           - unique
+
+      - name: nm_cliente
+        description: Client's name
+        tests:
+          - not_null
+
+      - name: ds_email
+        description: Client's email
+        tests:
+          - not_null
+          - unique

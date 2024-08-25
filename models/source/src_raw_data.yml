@@ -6,4 +6,9 @@ sources:
       enabled: true
     tables:
       - name: clientes
+        columns:
+          - name: id_cliente
+            tests:
+              - unique
+              - not_null
       - name: cliente_info
