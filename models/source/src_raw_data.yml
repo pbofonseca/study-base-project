@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: raw_data
+    config:
+      enabled: true
+    tables:
+      - name: clientes
+      - name: cliente_info
