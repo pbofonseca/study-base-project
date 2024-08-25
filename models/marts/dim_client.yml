@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: dim_client
+    description: These model describe the dimension for clients
+
+    columns:
+      - name: id_cliente
+        description: Client's identification
+        tests:
+          - unique
